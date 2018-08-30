@@ -38,7 +38,6 @@ client.on("message", (message) => {
     }
 
 
-  client.on('message',async message => {
   if(message.content.startsWith(prefix + "close")) {
         if (!message.channel.name.startsWith(`ticket-`)) return message.channel.send(`You can't use the close command outside of a ticket channel.`);
 
